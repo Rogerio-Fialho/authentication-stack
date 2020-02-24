@@ -1,0 +1,6 @@
+[submodule "angular"]
+	path = angular
+	url = git@github.com:Rogerio-Fialho/angular-authentication.git
+[submodule "nestjs"]
+	path = nestjs
+	url = git@github.com:Rogerio-Fialho/nest-authentication.git
