@@ -1,0 +1,41 @@
+version: "3.2"
+
+services:  
+  web:
+    image: nginx
+    ports:
+      - 80:80
+
+  # nestjs:
+  #   build:
+  #     context: ./nestjs
+  #     dockerfile: Dockerfile
+  #   restart: always
+  #   environment:
+  #     - NODE_ENV=development
+  #     - SERVER_NAME=localhost
+  #     - MONGO_URL=mongodb://mongo:27017/test
+  #   volumes:
+  #     - ./nestjs/:/sources/
+  #   ports:
+  #     - 9000:9000
+  #   links:
+  #     - mongo
+  #   depends_on:
+  #     - mongo
+  
+  # mongo:
+  #   image: mongo:3.6
+  #   restart: always
+  #   volumes:
+  #     - ./mongo/db:/data/db
+
+  # mongo-express:
+  #   image: mongo-express
+  #   restart: always
+  #   ports:
+  #     - 8081:8081
+  #   links:
+  #     - mongo
+  #   depends_on:
+  #     - mongo
